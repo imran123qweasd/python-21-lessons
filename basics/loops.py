@@ -119,10 +119,20 @@ print(list)'''
 
 '=============================================итерирование сдлваоей===================='
 # при итерации словаря , мы будем получать его ключи
-dict_ = {'a':1,'z':2,'x':3,'c':4}
-'''for key in dict_:
-    print(key)'''
-dict_ = {'a':1,'z':2,'x':3,'c':4}
-for key in dict.keys():
-    print(key)
+# dict_ = {'a':1,'z':2,'x':3,'c':4}
+# '''for key in dict_:
+#     print(key)'''
+# dict_ = {'a':1,'z':2,'x':3,'c':4}
+# for key in dict.keys():
+#     print(key)
     
+# list_ = ['world', 'hello']
+# new_list  = list.reverse()
+# print(new_list)
+
+
+cash = [200, 500,100,100,1000,2000]
+
+res = cash.sort()
+print(cash)
+
