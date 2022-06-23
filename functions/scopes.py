@@ -1,4 +1,4 @@
-"================Области видимости и пространства имен=================="
+'''"================Области видимости и пространства имен=================="
 locals()  # - возвращает словарь со всеми локальными переменными
 globals()  # - возвращает словарь со всеми глобальными переменными
 
@@ -104,4 +104,25 @@ def func():
         inner2_func()
     inner_func()
     print(a)
-func() # 2
+func() # 2'''
+# matreshka
+'''size_global_matryoshka = 10
+def two_matryoshka():
+   size_matryoshka_two = 5
+   def three_matryoshka():
+       size_matryoshka_three = 2
+       return size_matryoshka_three + size_matryoshka_two
+   return three_matryoshka() + size_global_matryoshka
+print(two_matryoshka())'''
+#zadachka 2
+gl = []
+def add(name):
+   global gl
+   gl += [name]
+def remove(inx):
+   del gl[inx]
+for _ in range(7):
+   add(input())
+for _ in range(2):
+   remove(int(input()))
+print(gl)
